@@ -1,0 +1,27 @@
+{
+  "name": "gulp-inline-image",
+  "version": "0.0.1",
+  "description": "Gulp implementation of Compass's inline-image function",
+  "main": "index.js",
+  "homepage": "http://github.com/dkruythoff/gulp-inline-image",
+  "repository": "git://github.com/dkruythoff/gulp-inline-image.git",
+  "keywords": [
+    "gulpplugin",
+    "image",
+    "data",
+    "data-uri",
+    "inline-image",
+    "base64",
+    "uri",
+    "css",
+    "scss",
+    "sass",
+    "compass"
+  ],
+  "author": "Darius Kruythoff <darius@kruythoff.net>",
+  "license": "MIT",
+  "dependencies": {
+    "through2": "^0.6.3",
+    "datauri": "^0.6.0"
+  }
+}
