@@ -1,5 +1,3 @@
-'use strict';
-
 var through = require('through2');
 var datauri = require('datauri');
 var path = require('path');
