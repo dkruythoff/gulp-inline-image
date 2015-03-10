@@ -1,6 +1,8 @@
-var through = require('through2');
-var datauri = require('datauri');
-var path = require('path');
+var through = require('through2'),
+	datauri = require('datauri'),
+	gutil = require('gulp-util'),
+	path = require('path'),
+	PluginError = gutil.PluginError;
 
 // Name
 const PLUGIN_NAME = 'gulp-inline-image';
@@ -14,6 +16,10 @@ module.exports = function (opts) {
 		
 		if (file.isNull()) {
 			return callback(null, file);
+		}
+		
+		if (file.isStream()) {
+			new PluginError(PLUGIN_NAME, 'This plugin does not support streams');
 		}
 		
 		var baseDir = opts.baseDir || file.base;

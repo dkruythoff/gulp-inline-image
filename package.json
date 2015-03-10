@@ -1,10 +1,13 @@
 {
   "name": "gulp-inline-image",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gulp implementation of Compass's inline-image function",
   "main": "index.js",
   "homepage": "http://github.com/dkruythoff/gulp-inline-image",
-  "repository": "git://github.com/dkruythoff/gulp-inline-image.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkruythoff/gulp-inline-image.git"
+  },
   "keywords": [
     "gulpplugin",
     "image",
@@ -22,6 +25,17 @@
   "license": "MIT",
   "dependencies": {
     "through2": "^0.6.3",
-    "datauri": "^0.6.0"
+    "datauri": "^0.6.0",
+    "gulp-util": "^3.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/dkruythoff/gulp-inline-image/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
   }
 }
