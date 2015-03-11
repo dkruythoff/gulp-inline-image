@@ -35,9 +35,11 @@
     "test": "test"
   },
   "devDependencies": {
-    "mocha": "^2.2.1"
+    "gulp-mocha": "^2.0.0",
+    "gulp-load-plugins": "^0.8.1",
+    "gulp": "^3.8.11"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "gulp test"
   }
 }
