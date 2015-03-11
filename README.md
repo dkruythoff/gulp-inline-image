@@ -1,8 +1,7 @@
 gulp-inline-image
 ==========
 
-[![Build Status](https://travis-ci.org/dkruythoff/gulp-inline-image.svg?branch=master)](https://travis-ci.org/dkruythoff/gulp-inline-image)
-
+[![Build Status](https://travis-ci.org/dkruythoff/gulp-inline-image.svg?branch=master)](https://travis-ci.org/dkruythoff/gulp-inline-image) [![Dependency Status](https://david-dm.org/dkruythoff/gulp-inline-image.svg)](https://david-dm.org/dkruythoff/gulp-inline-image) 
 ---
 
 A [Gulp](http://github.com/gulpjs/gulp) implementation of Compass's [inline-image](http://compass-style.org/reference/compass/helpers/inline-data/#inline-image) Data Helper.  
