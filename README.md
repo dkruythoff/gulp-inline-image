@@ -1,10 +1,11 @@
 gulp-inline-image
 ==========
 
-[![NPM version](http://img.shields.io/npm/v/gulp-inline-image.svg?style=flat)](https://www.npmjs.com/packages/gulp-inline-image) 
-[![Build Status](https://travis-ci.org/dkruythoff/gulp-inline-image.svg?branch=master)](https://travis-ci.org/dkruythoff/gulp-inline-image) 
-[![Dependency Status](https://david-dm.org/dkruythoff/gulp-inline-image.svg)](https://david-dm.org/dkruythoff/gulp-inline-image) 
-[![devDependency Status](https://david-dm.org/dkruythoff/gulp-inline-image/dev-status.svg)](https://david-dm.org/dkruythoff/gulp-inline-image#info=devDependencies) [![Window build status](https://ci.appveyor.com/api/projects/status/7n3a0y0pbychbg57/branch/master?svg=true)](https://ci.appveyor.com/project/dkruythoff/gulp-inline-image/branch/master) 
+[![NPM version][npm-image]][npm-url] 
+[![Build Status][travis-image]][travis-url] 
+[![Dependency Status][dep-image]][dep-url] 
+[![devDependency Status][devdep-image]][devdep-url] 
+[![Window build status][appveyor-image]][appveyor-url] 
 
 ---
 
@@ -29,3 +30,14 @@ gulp.task('styles', function() {
 
 gulp.task('default', ['styles']);
 ```
+
+[npm-url]: https://www.npmjs.com/packages/gulp-inline-image
+[npm-image]: http://img.shields.io/npm/v/gulp-inline-image.svg?style=flat
+[travis-url]: https://travis-ci.org/dkruythoff/gulp-inline-image
+[travis-image]: https://travis-ci.org/dkruythoff/gulp-inline-image.svg?branch=master
+[dep-url]: https://david-dm.org/dkruythoff/gulp-inline-image
+[dep-image]: https://david-dm.org/dkruythoff/gulp-inline-image.svg
+[devdep-url]: https://david-dm.org/dkruythoff/gulp-inline-image#info=devDependencies
+[devdep-image]: https://david-dm.org/dkruythoff/gulp-inline-image/dev-status.svg
+[appveyor-url]: https://ci.appveyor.com/project/dkruythoff/gulp-inline-image/branch/master
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/7n3a0y0pbychbg57/branch/master?svg=true
