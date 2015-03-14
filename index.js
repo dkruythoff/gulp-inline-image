@@ -22,12 +22,19 @@ module.exports = function (opts) {
 			new PluginError(PLUGIN_NAME, 'This plugin does not support streams');
 		}
 		
-		var baseDir = opts.baseDir || file.base;
-		var src = file.contents.toString();
-		var match;
+		var baseDir = opts.baseDir || file.base,
+			src = file.contents.toString(),
+			match,
+			dUri;
 		
 		while (match = rInlineImage.exec(src)) {
-			src = src.replace(match[0], 'url("'+datauri(path.resolve(baseDir, match[1].replace('/',path.sep)))+'")');
+			dUri = datauri(path.resolve(baseDir, match[1].replace('/',path.sep)));
+			if (match[2]) {
+				// datauri has no option to give a MIME type, so we hack it in
+				dUri = dUri.replace(/(data:)[^]+(;base64)/,'$1'+match[2]+'$2');
+			}
+			
+			src = src.replace(match[0], 'url("'+dUri+'")');
 		}
 		
 		file.contents = new Buffer(src);

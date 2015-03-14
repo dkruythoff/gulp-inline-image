@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 }
 .logo-js {
-	background-image: inline-image('../img/logo-js.png','image/png');
+	background-image: inline-image('../img/logo-js.png');
 }
 .logo-gulp {
 	background-image: inline-image('../img/logo-gulp.png');
@@ -14,4 +14,11 @@
 }
 .logo-html5 {
 	background-image: inline-image("../img/logo-html5.svg");
+}
+.logo-css3 {
+	background-image: inline-image("../img/logo-css3.jpg");
+}
+.logo-css3-pjpeg {
+	/* dictated MIME type */
+	background-image: inline-image("../img/logo-css3.jpg","image/pjpeg");
 }
