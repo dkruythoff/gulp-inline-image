@@ -1,5 +1,5 @@
 var through = require('through2'),
-	datauri = require('datauri'),
+	datauri = require('datauri').sync,
 	gutil = require('gulp-util'),
 	path = require('path'),
 	PluginError = gutil.PluginError;
