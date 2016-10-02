@@ -1,6 +1,6 @@
 {
   "name": "gulp-inline-image",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Gulp implementation of Compass's inline-image function",
   "main": "index.js",
   "homepage": "http://github.com/dkruythoff/gulp-inline-image",
