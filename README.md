@@ -5,7 +5,6 @@ gulp-inline-image
 [![Build Status][travis-image]][travis-url] 
 [![Dependency Status][dep-image]][dep-url] 
 [![devDependency Status][devdep-image]][devdep-url] 
-[![Window build status][appveyor-image]][appveyor-url] 
 
 ---
 
@@ -39,5 +38,3 @@ gulp.task('default', ['styles']);
 [dep-image]: https://david-dm.org/dkruythoff/gulp-inline-image.svg
 [devdep-url]: https://david-dm.org/dkruythoff/gulp-inline-image#info=devDependencies
 [devdep-image]: https://david-dm.org/dkruythoff/gulp-inline-image/dev-status.svg
-[appveyor-url]: https://ci.appveyor.com/project/dkruythoff/gulp-inline-image/branch/master
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/7n3a0y0pbychbg57/branch/master?svg=true
