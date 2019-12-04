@@ -1,8 +1,7 @@
 var through = require('through2'),
 	datauri = require('datauri').sync,
-	gutil = require('gulp-util'),
 	path = require('path'),
-	PluginError = gutil.PluginError;
+	PluginError = require('plugin-error');;
 
 // Name
 const PLUGIN_NAME = 'gulp-inline-image';

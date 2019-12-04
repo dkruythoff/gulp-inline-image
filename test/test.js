@@ -1,5 +1,5 @@
 var assert = require('assert'),
-	gutil = require('gulp-util'),
+ 	Vinyl = require('vinyl'),
 	fs = require('fs'),
 	path = require('path'),
 	gulpInlineImage = require('../index');
@@ -11,7 +11,7 @@ describe('gulp-inline-image', function() {
 			
 			var filename = path.join(__dirname, 'css', 'style.css');
 			
-			var input = new gutil.File({
+			var input = new Vinyl({
 					base: path.dirname(filename),
 					path: filename,
 					contents: new Buffer(fs.readFileSync(filename))
@@ -44,7 +44,7 @@ describe('gulp-inline-image', function() {
 				done();
 			});
 			
-			stream.write(new gutil.File({
+			stream.write(new Vinyl({
 				path: filename,
 				contents: null
 			}));
